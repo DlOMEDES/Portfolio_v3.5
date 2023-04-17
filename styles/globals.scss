@@ -1,0 +1,81 @@
+html {
+  font-size: 62.5%; // 10px = 1rem
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  font-size: 1.6rem;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.mainGrid {
+  background-color: #f8fbf0;
+  height: 100vh;
+  display: grid;
+  grid-template-columns:
+    [mobile-start] 3rem [mobile-center-start]
+    repeat(8, [col-start] minmax(min-content, 9.6rem) [col-end])
+    [mobile-center-end] 3rem [mobile-end];
+  align-content: start;
+
+  @media only screen and (min-width: 768px) {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 7rem 45.5vw repeat(4, min-content) repeat(
+        4,
+        min-content
+      );
+    grid-template-columns:
+      [full-start] minmax(2rem, 1fr) [center-start] repeat(
+        12,
+        [col-start]minmax(min-content, 9rem) [col-end]
+      )
+      [center-end] minmax(2rem, 1fr) [full-end];
+  }
+}
+
+p,
+ul,
+a {
+  // font-size: 1.4rem;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+h4 {
+  // line-height: 1.3;
+}
+
+section {
+  margin: 2.5rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+  section {
+    // margin-bottom: 0;
+  }
+}

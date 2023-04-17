@@ -1,0 +1,150 @@
+.Header {
+  background-color: gainsboro;
+  grid-column: mobile-start/mobile-end;
+  padding: 1.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  height: 7rem;
+
+  // header media
+  @media only screen and (min-width: 768px) {
+    grid-row: 1 / span 1;
+    grid-column: full-start/full-end;
+  }
+
+  .Header_Title {
+    text-align: center;
+
+    @media only screen and (min-width: 768px) {
+      grid-column: 1/-1;
+      grid-row: 1/-1;
+    }
+  }
+}
+
+.MenuBtn {
+  display: flex;
+  flex-direction: column;
+  right: 5rem;
+  top: 2rem;
+  cursor: pointer;
+  background: transparent;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  transition: all 0.3s linear;
+
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+
+  /* lines */
+  .MenuBtn_Line {
+    width: 3rem;
+    height: 0.5rem;
+    margin: 0 0 0.7rem 0;
+    background: white;
+    transition: all 0.3s linear;
+  }
+
+  &_Open {
+    /* // rotate btn lines into X */
+
+    &_Line {
+      background: white;
+      /* // rotate line 1 */
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(0.5rem, 0.9rem);
+        /* // animation: rotate45 0.5s ease-in; */
+      }
+      /* // hide line 2 */
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      /* // rotate line 3 */
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(0.5rem, -0.9rem);
+        /* // animation: rotateMinus45 0.5s ease-in; */
+      }
+    }
+  }
+}
+
+.MainNav {
+  // display: none;
+  background: gainsboro;
+  height: 90vh;
+  width: 70vw;
+  grid-column: mobile-start / col-end 3;
+  position: absolute;
+  top: 7rem;
+  right: -100%;
+  transition: all 0.3s linear;
+  // NAV TRANSITION
+  &_Open {
+    right: 0%;
+  }
+
+  @media only screen and (min-width: 768px) {
+    height: unset;
+    width: unset;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    position: unset;
+    background: none;
+    // top: un;
+    // left: -100%;
+  }
+
+  @media only screen and (min-width: 768px) {
+    display: unset;
+    left: 0%;
+  }
+
+  &_Menu {
+    list-style-type: none;
+    margin: 3rem;
+    position: relative;
+    top: 20rem;
+    @media only screen and (min-width: 768px) {
+      margin: unset;
+      position: unset;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+
+    li {
+      margin: 2rem;
+      @media only screen and (min-width: 768px) {
+        margin: 0.5rem 2rem;
+      }
+    }
+
+    li a {
+      color: white;
+      font-weight: 400;
+      font-size: 1.6rem;
+      transition: all 0.3s ease-out;
+    }
+  }
+
+  &_MenuLeft,
+  &_MenuRight {
+    @media only screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  &_MenuLeft {
+    grid-column: 1;
+    justify-self: end;
+  }
+  &_MenuRight {
+    grid-column: 3;
+  }
+}

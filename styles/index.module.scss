@@ -1,0 +1,7 @@
+.banner {
+  grid-column: mobile-start/mobile-end;
+
+  @media only screen and (min-width: 768px) {
+    grid-column: full-start/full-end;
+  }
+}
