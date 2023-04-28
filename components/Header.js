@@ -19,9 +19,7 @@ const Header = () => {
 
   return (
     <header className={styles.Header}>
-      <div className={styles.logo}>
-        <h1>imgLogo</h1>
-      </div>
+      <img src="/logo-dark.svg" alt="" className={styles.Header_logo} />
       <div
         className={
           ShowNav === false
