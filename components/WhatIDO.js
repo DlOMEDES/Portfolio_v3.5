@@ -1,11 +1,10 @@
 import styles from "@/styles/whatIDO.module.scss";
+import SectionIntro from "@/components/SectionIntro";
 
 export default function WhatIdo() {
   return (
     <section className={styles.whatIDo}>
-      <div className={styles.Intro}>
-        <h2 className={styles.Intro_title}>What I Do</h2>
-      </div>
+      <SectionIntro title="What I Do" styleClass="whatIdo" />
       <div className={styles.services}>
         <h4>
           Responsive Web Designs <span>Converting ideas into design</span>

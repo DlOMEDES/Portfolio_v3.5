@@ -1,0 +1,33 @@
+.whatIdo {
+  box-shadow: rgb(204 174 122 / 30%) 0px 15px 25px 0px;
+  // width: 15rem;
+  // height: 15rem;
+  margin: 10rem auto 5rem auto;
+
+  h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 3rem;
+    text-align: center;
+    padding: 3rem;
+  }
+}
+
+.projects {
+  box-shadow: rgb(204 174 122 / 30%) 0px 15px 25px 0px;
+  margin: 10rem auto 5rem auto;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 3rem;
+    text-align: center;
+    padding: 3rem;
+  }
+}

@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "@/styles/index.module.scss";
 import Banner from "@/components/Banner";
 import WhatIDO from "@/components/WhatIDO";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       </Head>
       <Banner />
       <WhatIDO />
+      <Projects />
     </>
   );
 }
