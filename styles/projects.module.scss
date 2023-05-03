@@ -1,3 +1,28 @@
 .projects {
   grid-column: mobile-center-start/mobile-center-end;
 }
+
+.items {
+  margin: 10rem 0 5rem 0;
+}
+
+.article {
+  margin: 5rem 0;
+
+  &_body {
+    h3 {
+      margin: 1.5rem 0;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+
+    span {
+      font-weight: bold;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      color: rgb(3, 3, 3);
+    }
+  }
+}

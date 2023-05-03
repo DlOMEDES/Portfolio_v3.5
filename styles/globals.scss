@@ -22,9 +22,9 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns:
-    [mobile-start] 3rem [mobile-center-start]
+    [mobile-start] 2rem [mobile-center-start]
     repeat(8, [col-start] minmax(min-content, 9.6rem) [col-end])
-    [mobile-center-end] 3rem [mobile-end];
+    [mobile-center-end] 2rem [mobile-end];
   align-content: start;
 
   @media only screen and (min-width: 768px) {
