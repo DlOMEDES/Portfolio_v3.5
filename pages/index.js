@@ -4,6 +4,7 @@ import styles from "@/styles/index.module.scss";
 import Banner from "@/components/Banner";
 import WhatIDO from "@/components/WhatIDO";
 import Projects from "@/components/Projects";
+import About from "@/components/About";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Banner />
+      <About />
       <WhatIDO />
       <Projects />
     </>

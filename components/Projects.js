@@ -36,7 +36,9 @@ const projectData = [
 const ProjectItem = ({ img, title, tech, desc }) => {
   return (
     <article className={styles.article}>
-      <img src={img} alt="" width="30rem" height="30rem" />
+      <div className={styles.article_img}>
+        <img src={img} alt="" width="30rem" height="30rem" />
+      </div>
 
       <div className={styles.article_body}>
         <h3>{title}</h3>
