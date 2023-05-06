@@ -1,11 +1,10 @@
-import styles from "@/styles/whatIDO.module.scss";
 import SectionIntro from "@/components/SectionIntro";
 
-export default function WhatIdo() {
+export default function Services() {
   return (
-    <section className={styles.whatIDo}>
-      <SectionIntro title="What I Do" styleClass="whatIdo" />
-      <div className={styles.services}>
+    <section className='services'>
+      <SectionIntro title="What I Do" styleClass="servicesPropClass" />
+      <div className='services_box'>
         <h4>
           Responsive Web Designs <span>Converting ideas into design</span>
         </h4>
@@ -15,7 +14,7 @@ export default function WhatIdo() {
           screen size.
         </p>
       </div>
-      <div className={styles.services}>
+      <div className='services_box'>
         <h4>
           Web Development <span>From idea to deployment</span>
         </h4>
@@ -25,7 +24,7 @@ export default function WhatIdo() {
           all part of the development process.
         </p>
       </div>
-      <div className={styles.services}>
+      <div className='services_box'>
         <h4>
           Support, SEO & Analytics <span>Maintainable and Optimized</span>
         </h4>

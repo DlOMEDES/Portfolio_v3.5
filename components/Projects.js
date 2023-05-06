@@ -1,4 +1,3 @@
-import styles from "@/styles/projects.module.scss";
 import SectionIntro from "@/components/SectionIntro";
 import React, { useState } from "react";
 
@@ -35,12 +34,12 @@ const projectData = [
 
 const ProjectItem = ({ img, title, tech, desc }) => {
   return (
-    <article className={styles.article}>
-      <div className={styles.article_img}>
+    <article className='article'>
+      <div className='article_img'>
         <img src={img} alt="" width="30rem" height="30rem" />
       </div>
 
-      <div className={styles.article_body}>
+      <div className='article_body'>
         <h3>{title}</h3>
         <p>{desc}</p>
         <span>{tech}</span>
@@ -51,10 +50,10 @@ const ProjectItem = ({ img, title, tech, desc }) => {
 
 export default function Projects() {
   return (
-    <section className={styles.projects}>
-      <SectionIntro title="Projects" styleClass="projects" />
+    <section className='projects'>
+      <SectionIntro title="Projects" styleClass="projectsPropClass" />
 
-      <div className={styles.items}>
+      <div className='items'>
         {projectData.map((item) => {
           return <ProjectItem key={item.id} {...item} />;
         })}

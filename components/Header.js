@@ -1,4 +1,4 @@
-import styles from "@/styles/header.module.scss";
+// import styles from "@/styles/header.module.scss";
 // import MainNav from "../components/MainNav";
 import { useState } from "react";
 import Link from "next/link";
@@ -14,18 +14,14 @@ const Header = () => {
   // Used a variable for duplicate ternary operation on menu btn lines with ShowNav state
   let ternaryShowBtnLines =
     ShowNav === false
-      ? `${styles.MenuBtn_Line}`
-      : `${styles.MenuBtn_Line} ${styles.MenuBtn_Open_Line}`;
+      ? 'menuBtn_line'
+      : 'menuBtn_line menuBtn_line--open';
 
   return (
-    <header className={styles.Header}>
-      <img src="/logo-dark.svg" alt="" className={styles.Header_logo} />
+    <header className='header'>
+      <img src="/logo-dark.svg" alt="" className='header_logo' />
       <div
-        className={
-          ShowNav === false
-            ? `${styles.MenuBtn}`
-            : `${styles.MenuBtn} ${styles.MenuBtn_Open}`
-        }
+        className='menuBtn'
         onClick={handleClick}
       >
         <span className={ternaryShowBtnLines}></span>
@@ -33,8 +29,8 @@ const Header = () => {
         <span
           className={
             ShowNav === false
-              ? `${styles.MenuBtn_Line}`
-              : `${styles.MenuBtn_Line} ${styles.MenuBtn_Open_Line}`
+              ? 'menuBtn_line'
+              : 'menuBtn_line menuBtn_line--open'
           }
         ></span>
       </div>
@@ -42,21 +38,21 @@ const Header = () => {
       <nav
         className={
           ShowNav === false
-            ? `${styles.MainNav}`
-            : `${styles.MainNav} ${styles.MainNav_Open}`
+            ? 'mainNav'
+            : 'mainNav mainNav_Open'
         }
       >
-        <ul className={styles.MainNav_Menu}>
-          <li className={styles.MainNav_MenuLinks}>
+        <ul className='mainNav_menu'>
+          <li>
             <Link href="/">Home</Link>
           </li>
-          <li className={styles.MainNav_MenuLinks}>
+          <li>
             <Link href="/blogs">Blogs</Link>
           </li>
-          <li className={styles.MainNav_MenuLinks}>
+          <li>
             <Link href="/post">Post page</Link>
           </li>
-          <li className={styles.MainNav_MenuLinks}>
+          <li>
             <Link href="/">About</Link>
           </li>
         </ul>

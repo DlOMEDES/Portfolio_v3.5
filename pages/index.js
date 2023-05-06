@@ -1,8 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "@/styles/index.module.scss";
 import Banner from "@/components/Banner";
-import WhatIDO from "@/components/WhatIDO";
+import Services from "@/components/Services";
 import Projects from "@/components/Projects";
 import About from "@/components/About";
 
@@ -17,7 +15,7 @@ export default function Home() {
       </Head>
       <Banner />
       <About />
-      <WhatIDO />
+      <Services />
       <Projects />
     </>
   );

@@ -1,4 +1,4 @@
-.Header {
+.header {
   grid-column: mobile-start/mobile-end;
   padding: 1.5rem 2rem;
   display: flex;
@@ -21,17 +21,9 @@
     object-fit: unset;
   }
 
-  .Header_Title {
-    text-align: center;
-
-    @media only screen and (min-width: 768px) {
-      grid-column: 1/-1;
-      grid-row: 1/-1;
-    }
-  }
 }
 
-.MenuBtn {
+.menuBtn {
   display: flex;
   flex-direction: column;
   right: 5rem;
@@ -49,22 +41,18 @@
   }
 
   /* lines */
-  .MenuBtn_Line {
+  &_line {
     width: 3rem;
     height: 0.5rem;
     margin: 0 0 0.7rem 0;
     background: white;
     transition: all 0.3s linear;
 
-    &:last-child {
+    &:nth-child(3) {
       margin: 0;
     }
-  }
 
-  &_Open {
-    /* // rotate btn lines into X */
-
-    &_Line {
+    &--open {
       background: white;
       /* // rotate line 1 */
       &:nth-child(1) {
@@ -84,7 +72,11 @@
   }
 }
 
-.MainNav {
+.menuBtn_line--open {
+  
+}
+
+.mainNav {
   // display: none;
   background: white;
   height: 70vh;
@@ -118,7 +110,7 @@
     left: 0%;
   }
 
-  &_Menu {
+  &_menu {
     list-style-type: none;
     // margin: 3rem;
     position: relative;
@@ -147,7 +139,7 @@
     }
 
     li a {
-      color: blue;
+      color: $mainblue;
       font-weight: 400;
       font-size: 2rem;
       transition: all 0.3s ease-out;
