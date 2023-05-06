@@ -47,22 +47,18 @@ const Header = () => {
         }
       >
         <ul className={styles.MainNav_Menu}>
-          <div className={styles.MainNav_MenuLeft}>
-            <li className={styles.MainNav_MenuLinks}>
-              <Link href="/">Home</Link>
-            </li>
-            <li className={styles.MainNav_MenuLinks}>
-              <Link href="/blogs">Blogs</Link>
-            </li>
-          </div>
-          <div className={styles.MainNav_MenuRight}>
-            <li className={styles.MainNav_MenuLinks}>
-              <Link href="/post">Post page</Link>
-            </li>
-            <li className={styles.MainNav_MenuLinks}>
-              <Link href="/">About</Link>
-            </li>
-          </div>
+          <li className={styles.MainNav_MenuLinks}>
+            <Link href="/">Home</Link>
+          </li>
+          <li className={styles.MainNav_MenuLinks}>
+            <Link href="/blogs">Blogs</Link>
+          </li>
+          <li className={styles.MainNav_MenuLinks}>
+            <Link href="/post">Post page</Link>
+          </li>
+          <li className={styles.MainNav_MenuLinks}>
+            <Link href="/">About</Link>
+          </li>
         </ul>
       </nav>
     </header>

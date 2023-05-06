@@ -9,7 +9,6 @@ export default function App({ Component, pageProps }) {
   return (
     // mainGrid styles and poppins object from next/font
     <main className={`mainGrid ${poppins.className}`}>
-      <Header />
       <Component {...pageProps} />
       <Footer />
     </main>

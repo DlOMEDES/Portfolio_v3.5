@@ -1,55 +1,46 @@
+.title {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 3rem;
+  text-align: center;
+  padding: 3rem;
+}
+
 .whatIdo {
   box-shadow: rgb(204 174 122 / 30%) 0px 15px 25px 0px;
   // width: 15rem;
   // height: 15rem;
   margin: 10rem auto 5rem auto;
-
-  h2 {
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    font-size: 3rem;
-    text-align: center;
-    padding: 3rem;
-  }
 }
 
-.projects {
+.about {
   box-shadow: rgb(204 174 122 / 30%) 0px 15px 25px 0px;
-  margin: 10rem auto 5rem auto;
+  margin: auto;
   height: 20rem;
   width: 20rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  h2 {
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    font-size: 3rem;
-    text-align: center;
-    padding: 3rem;
-  }
 }
 
+.projects {
+  position: relative;
 
-.about {
-  .title {
-    margin: auto;
-  }
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 200px 200px 0 0;
-    border-color: #007bff transparent transparent transparent;
-    -webkit-filter: drop-shadow(1px 1px 1px rgba(0,0,0,.5));
-    filter: drop-shadow(1px 1px 1px rgba(0,0,0,.5));
+    border-color: #f8fbf0 transparent transparent transparent;
+    -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(rgba(204, 174, 122, 0.3) 0px 15px 25px);
     z-index: 0;
-    transform: rotate(45deg) translateX(-50%);
+    transform: translateX(-50%) rotate(45deg);
     left: 50%;
+    top: 4.5rem;
   }
 
   h2 {

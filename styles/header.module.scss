@@ -1,11 +1,11 @@
 .Header {
   grid-column: mobile-start/mobile-end;
-  background-color: gainsboro;
   padding: 1.5rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
+  width: 100%;
   z-index: 2;
   height: 7rem;
 
@@ -86,14 +86,17 @@
 
 .MainNav {
   // display: none;
-  background: gainsboro;
-  height: 90vh;
-  width: 70vw;
+  background: white;
+  height: 70vh;
+  width: 50vw;
   grid-column: mobile-start / col-end 3;
   position: absolute;
   top: 7rem;
   right: -100%;
   transition: all 0.3s linear;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+
   // NAV TRANSITION
   &_Open {
     right: 0%;
@@ -117,9 +120,16 @@
 
   &_Menu {
     list-style-type: none;
-    margin: 3rem;
+    // margin: 3rem;
     position: relative;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 2rem;
+
     @media only screen and (min-width: 768px) {
       margin: unset;
       position: unset;
@@ -129,7 +139,7 @@
     }
 
     li {
-      margin: 2rem 0;
+      // margin: 2rem 0;
 
       @media only screen and (min-width: 768px) {
         margin: 0.5rem 2rem;
@@ -137,25 +147,14 @@
     }
 
     li a {
-      color: white;
+      color: blue;
       font-weight: 400;
       font-size: 2rem;
       transition: all 0.3s ease-out;
     }
   }
 
-  &_MenuLeft,
-  &_MenuRight {
-    @media only screen and (min-width: 768px) {
-      display: flex;
-    }
-  }
-
-  &_MenuLeft {
-    grid-column: 1;
-    justify-self: end;
-  }
-  &_MenuRight {
-    grid-column: 3;
+  @media only screen and (min-width: 768px) {
+    display: flex;
   }
 }
