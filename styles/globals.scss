@@ -18,32 +18,6 @@ body {
   margin: 0;
 }
 
-.mainGrid {
-  overflow-x: hidden;
-  background-color: $shellwhite;
-  height: 100vh;
-  display: grid;
-  grid-template-columns:
-    [mobile-start] 2rem [mobile-center-start]
-    repeat(8, [col-start] minmax(min-content, 9.6rem) [col-end])
-    [mobile-center-end] 2rem [mobile-end];
-  align-content: start;
-
-  @media only screen and (min-width: 768px) {
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 7rem 45.5vw repeat(4, min-content) repeat(
-        4,
-        min-content
-      );
-    grid-template-columns:
-      [full-start] minmax(2rem, 1fr) [center-start] repeat(
-        12,
-        [col-start]minmax(min-content, 9rem) [col-end]
-      )
-      [center-end] minmax(2rem, 1fr) [full-end];
-  }
-}
 
 p,
 ul,
@@ -80,4 +54,41 @@ section {
   section {
     // margin-bottom: 0;
   }
+}
+
+.mainGrid {
+  overflow-x: hidden;
+  background-color: $shellwhite;
+  height: 100vh;
+  display: grid;
+  grid-template-columns:
+    [mobile-start] 2rem [mobile-center-start]
+    repeat(8, [col-start] minmax(min-content, 9.6rem) [col-end])
+    [mobile-center-end] 2rem [mobile-end];
+  align-content: start;
+
+  @media only screen and (min-width: 768px) {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 7rem 45.5vw repeat(4, min-content) repeat(
+        4,
+        min-content
+      );
+    grid-template-columns:
+      [full-start] minmax(2rem, 1fr) [center-start] repeat(
+        12,
+        [col-start]minmax(min-content, 9rem) [col-end]
+      )
+      [center-end] minmax(2rem, 1fr) [full-end];
+  }
+}
+
+.rowGap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5rem;
+}
+
+.secmargin {
+  margin: 10rem 0;
 }

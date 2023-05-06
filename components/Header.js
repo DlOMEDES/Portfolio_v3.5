@@ -19,7 +19,8 @@ const Header = () => {
 
   return (
     <header className='header'>
-      <img src="/logo-dark.svg" alt="" className='header_logo' />
+      <img src="/logo-light.svg" alt="" className='header_logo' />
+      
       <div
         className='menuBtn'
         onClick={handleClick}

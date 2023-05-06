@@ -2,8 +2,8 @@ import SectionIntro from "@/components/SectionIntro";
 
 export default function Services() {
   return (
-    <section className='services'>
-      <SectionIntro title="What I Do" styleClass="servicesPropClass" />
+    <section className='services secmargin rowGap'>
+      <SectionIntro title="What I Do" titlePropClass="servicesTitle" shapeClass="servicesPropShape" />
       <div className='services_box'>
         <h4>
           Responsive Web Designs <span>Converting ideas into design</span>

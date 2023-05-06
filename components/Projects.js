@@ -50,8 +50,8 @@ const ProjectItem = ({ img, title, tech, desc }) => {
 
 export default function Projects() {
   return (
-    <section className='projects'>
-      <SectionIntro title="Projects" styleClass="projectsPropClass" />
+    <section className='projects secmargin'>
+      <SectionIntro title="Work" titlePropClass="projectsTitle" shapeClass="projectsPropShape" />
 
       <div className='items'>
         {projectData.map((item) => {
