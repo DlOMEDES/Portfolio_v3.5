@@ -50,7 +50,7 @@ const ProjectItem = ({ img, title, tech, desc }) => {
 
 export default function Projects() {
   return (
-    <section className="projects secmargin">
+    <section id="work" className="projects secmargin">
       <SectionIntro
         title="Work"
         titlePropClass="projectsTitle"

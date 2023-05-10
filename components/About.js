@@ -27,6 +27,13 @@ export default function About() {
           and interfaces for React applications.
         </p>
       </div>
+
+      <div className="aboutCta">
+        <a href="/resume.pdf" target="_blank">
+          View Resume
+        </a>
+        <a href="/#work">My Work</a>
+      </div>
     </section>
   );
 }
