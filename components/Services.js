@@ -2,29 +2,35 @@ import SectionIntro from "@/components/SectionIntro";
 
 export default function Services() {
   return (
-    <section className='services secmargin rowGap'>
-      <SectionIntro title="What I Do" titlePropClass="servicesTitle" shapeClass="servicesPropShape" />
-      <div className='services_box'>
+    <section className="services secmargin">
+      <SectionIntro
+        title="Services"
+        titlePropClass="servicesTitle"
+        shapeClass="servicesPropShape"
+        subtitle="What I do"
+      />
+
+      <div className="services_box">
         <h4>
-          Responsive Web Designs <span>Converting ideas into design</span>
+          Responsive Web Design <span>Currating design assets</span>
         </h4>
         <p>
-          I am responsible for slicing and implenting designs for digital web
-          products. Aligning and curating design assets to fit perfectly in any
-          screen size.
+          I am responsible for aligning and curating assets to fit perfectly in
+          any screen size. Slicing and implenting pixel perfect designs for
+          websites and wep apps.
         </p>
       </div>
-      <div className='services_box'>
+      <div className="services_box">
         <h4>
           Web Development <span>From idea to deployment</span>
         </h4>
         <p>
           Using HTML, Css and JavaScript to building beautiful websites and
           applications. Debugging, updating and adding new functionalities are
-          all part of the development process.
+          all part my development process.
         </p>
       </div>
-      <div className='services_box'>
+      <div className="services_box">
         <h4>
           Support, SEO & Analytics <span>Maintainable and Optimized</span>
         </h4>

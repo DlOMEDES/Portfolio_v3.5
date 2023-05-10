@@ -1,5 +1,20 @@
 .about {
   grid-column: mobile-center-start/mobile-center-end;
-  margin: 10rem 0;
   position: relative;
+}
+
+.myPhoto {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  margin: 5rem auto;
+}
+
+.aboutText {
+  span {
+    font-size: 1.6rem;
+    font-weight: 400;
+    display: block;
+    color: $mainblue;
+  }
 }

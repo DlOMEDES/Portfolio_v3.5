@@ -34,12 +34,12 @@ const projectData = [
 
 const ProjectItem = ({ img, title, tech, desc }) => {
   return (
-    <article className='article'>
-      <div className='article_img'>
+    <article className="article">
+      <div className="article_img">
         <img src={img} alt="" width="30rem" height="30rem" />
       </div>
 
-      <div className='article_body'>
+      <div className="article_body">
         <h3>{title}</h3>
         <p>{desc}</p>
         <span>{tech}</span>
@@ -50,10 +50,14 @@ const ProjectItem = ({ img, title, tech, desc }) => {
 
 export default function Projects() {
   return (
-    <section className='projects secmargin'>
-      <SectionIntro title="Work" titlePropClass="projectsTitle" shapeClass="projectsPropShape" />
+    <section className="projects secmargin">
+      <SectionIntro
+        title="Work"
+        titlePropClass="projectsTitle"
+        subtitle="Projects that I've done for companies or personal projects"
+      />
 
-      <div className='items'>
+      <div className="items">
         {projectData.map((item) => {
           return <ProjectItem key={item.id} {...item} />;
         })}

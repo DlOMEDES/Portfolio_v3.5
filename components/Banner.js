@@ -5,10 +5,9 @@ export default function Banner() {
     <section className='banner'>
       <Header />
       <div className='content'>
-        <p className='content_hello'>Hello</p>
+        {/* <p className='content_hello'>Hello</p> */}
         <h1 className='content_title'>
-          <span> I'm Diomedes Lajara,</span> <br /> a Web Developer specializing
-          Frontend User Interfaces using WordPress and ReactJS.
+          <span> Diomedes Lajara.</span> <br /> A Web Developer / Designer / Freelancer
         </h1>
       </div>
     </section>
