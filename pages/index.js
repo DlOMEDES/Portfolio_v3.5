@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Banner from "@/components/Banner";
-import Services from "@/components/Services";
+import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import About from "@/components/About";
 
@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
       <Banner />
       <About />
-      <Services />
+      <Skills />
       <Projects />
     </>
   );

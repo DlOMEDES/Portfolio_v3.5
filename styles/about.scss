@@ -21,21 +21,24 @@
   }
 }
 
-.aboutCta {
+.aboutInfo {
   display: inline-block;
 
-  a {
-    margin: 1rem 0;
-    display: block;
-    padding: 1rem 1.5rem;
-    border: 1px solid lightgrey;
-    border-radius: 2rem;
-    text-align: center;
-    font-size: 1.4rem;
-  }
+  &_buttons {
+    display: inline-block;
+    a {
+      margin: 1rem 0;
+      display: block;
+      padding: 1rem 1.5rem;
+      border: 1px solid lightgrey;
+      border-radius: 2rem;
+      text-align: center;
+      font-size: 1.4rem;
+    }
 
-  a:first-child {
-    background: $mainblue;
-    color: white;
+    a:first-child {
+      background: $mainblue;
+      color: white;
+    }
   }
 }
