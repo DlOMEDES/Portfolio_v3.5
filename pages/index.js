@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Banner from "@/components/Banner";
 import Skills from "@/components/Skills";
-import Projects from "@/components/Projects";
+import Work from "@/components/Work";
 import About from "@/components/About";
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
       <Banner />
       <About />
       <Skills />
-      <Projects />
+      <Work />
     </>
   );
 }

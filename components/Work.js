@@ -48,9 +48,9 @@ const ProjectItem = ({ img, title, tech, desc }) => {
   );
 };
 
-export default function Projects() {
+export default function Work() {
   return (
-    <section id="work" className="projects secmargin">
+    <section id="work" className="work secmargin">
       <SectionIntro
         title="Work"
         titlePropClass="projectsTitle"

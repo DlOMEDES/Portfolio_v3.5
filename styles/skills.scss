@@ -1,3 +1,21 @@
 .skills {
   grid-column: mobile-center-start/mobile-center-end;
 }
+
+.techIcons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 5rem;
+  row-gap: 1rem;
+
+  &_list {
+    text-align: center;
+  }
+}
+.tech {
+  &_item {
+    margin-bottom: 3rem;
+    span {
+    }
+  }
+}
