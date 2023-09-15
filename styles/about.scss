@@ -1,6 +1,10 @@
 .about {
   grid-column: mobile-center-start/mobile-center-end;
   position: relative;
+
+  @media only screen and (min-width: 768px) {
+    grid-column: center-start/center-end;
+  }
 }
 
 .myPhoto {

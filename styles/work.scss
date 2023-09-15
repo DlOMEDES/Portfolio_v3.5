@@ -2,6 +2,10 @@
   grid-column: mobile-center-start/mobile-center-end;
   margin: 5rem 0;
   position: relative;
+
+  @media only screen and (min-width: 768px) {
+    grid-column: center-start/center-end;
+  }
 }
 
 .items {

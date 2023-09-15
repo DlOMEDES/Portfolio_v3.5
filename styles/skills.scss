@@ -1,5 +1,9 @@
 .skills {
   grid-column: mobile-center-start/mobile-center-end;
+
+  @media only screen and (min-width: 768px) {
+    grid-column: center-start/center-end;
+  }
 }
 
 .techIcons {
